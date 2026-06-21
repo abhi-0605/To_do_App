@@ -104,3 +104,43 @@ h1{
     border-radius: 12px;
     border-left: 5px solid #9590f1;
 }
+
+.task.done span{
+    text-decoration: line-through;
+    color: rgb(84, 83, 83);
+    opacity: 0.7;
+}
+
+.action{
+    display: flex;
+    gap: 8px;
+}
+
+.done-btn{
+    background: #22c55e;;
+}
+
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.action button{
+    border: none;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media(max-width:600px) {
+    .input-box{
+        flex-direction: column;
+    }
+
+    .task{
+        flex-direction: column;
+        gap:10px;
+        align-items: flex-start;
+    }
+}
