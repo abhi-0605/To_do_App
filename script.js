@@ -47,7 +47,7 @@ function displaytask(){
             <span>${task.text}</span>
 
             <div class="action">
-                <button class="done-btn" onclick="toggletask(${idx})">✓</button>
+                <button class="done-btn" onclick="toggletask(${idx})">${task.done?"↺":"✓"}</button>
                 <button class="delete-btn" onclick="deletetask(${idx})"> 🗑</button>
             </div>
             `;
